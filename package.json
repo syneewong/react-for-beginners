@@ -1,7 +1,7 @@
 {
   "name": "react-for-beginners",
   "version": "1.0.0",
-  "description": "",
+  "description": "React on the Server for Beginners: Build a Universal React and Node App",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/syneewong/react-for-beginners.git"
   },
-  "author": "",
+  "author": "Syn-Ee Wong",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/syneewong/react-for-beginners/issues"
