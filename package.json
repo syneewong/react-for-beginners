@@ -50,7 +50,11 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "serve": "NODE_ENV=production node ./build/server/bundle.js",
+    "build-client": "node scripts/build-client.js",
+    "build-server": "node scripts/build-server.js",
+    "build": "npm run build-client && npm run build-server"
   },
   "jest": {
     "collectCoverageFrom": [
