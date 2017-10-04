@@ -7,7 +7,7 @@ import Medal from './Medal';
 import Flag from './Flag';
 import athletes from '../data/athletes';
 
-export default class AthletePage extends React.Component {
+class AthletePage extends React.Component {
   render() {
     const id = this.props.params.id;
     const athlete = athletes.filter((athlete) => athlete.id === id)[0];
@@ -25,7 +25,7 @@ export default class AthletePage extends React.Component {
             <h2 className="name">{athlete.name}</h2>
           </div>
           <section className="description">
-            Olympic medalist from <strong><Flag code={athlete.country} showName="true"/></strong>,
+            Syn-Ee medalist from <strong><Flag code={athlete.country} showName="true"/></strong>,
             born in {athlete.birth} (Find out more on <a href={athlete.link} target="_blank">Wikipedia</a>).
           </section>
           <section className="medals">
@@ -42,3 +42,5 @@ export default class AthletePage extends React.Component {
     );
   }
 }
+
+export default AthletePage;
